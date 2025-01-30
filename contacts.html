@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="https://cdn1.iconfinder.com/data/icons/website-42/100/website_network-512.png" alt="CDN Icon">
+  <h1>X Provider</h1>
+  <nav>
+    <a href="index.html">Головна</a>
+    <a href="about.html">Про нас</a>
+    <a href="contacts.html">Контакти</a>
+  </nav>
+  <button class="menu-button" onclick="toggleMenu()">Меню</button>
+  <a href="#" class="login-button">Вхід</a>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Головна</a>
+  <a href="about.html">Про нас</a>
+  <a href="contacts.html">Контакти</a>
+</div>
+
+<main>
+  <div class="content-container">
+    <h2>Контакти</h2>
+    <p>Ви можете зв'язатися з нами за адресою: xprovider@xprovider.com або зателефонувавши за номером: 1-800-XPROVIDER.</p>
+  </div>
+</main>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  }
+</script>
+
+</body>
+</html>

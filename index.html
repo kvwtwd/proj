@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>X Provider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="https://cdn1.iconfinder.com/data/icons/website-42/100/website_network-512.png" alt="CDN Icon">
+    <h1>X Provider</h1>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+    <button class="menu-button" onclick="toggleMenu()">Меню</button>
+    <a href="#" class="login-button">Вхід</a>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Головна</a>
+    <a href="about.html">Про нас</a>
+    <a href="contacts.html">Контакти</a>
+</div>
+
+<main>
+    <div class="content-container">
+        <div class="product-grid">
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1545987796-200677ee1011?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VydmVyJTIwbmV0d29ya3xlbnwwfHwwfHx8MA%3D%3D" alt="Product Image">
+                <h3>Послуга CDN</h3>
+                <p>Забезпечте швидке та надійне доставлення контенту.</p>
+                <p class="price">Ціна: 9999 грн/місяць</p>
+                <button>Замовити</button>
+            </article>
+            <article class="product-card">
+                <img src="https://media.istockphoto.com/id/2162026367/photo/cloud-computing-sign-digital-technology-data-concept-on-cpu.webp?a=1&b=1&s=612x612&w=0&k=20&c=AwdW-zyV3AAUfZL26f8pkU0yo7tgj-kwly0anzTEKwE=" alt="Product Image">
+                <h3>Хмарне зберігання</h3>
+                <p>Зберігайте ваші дані безпечно та швидко.</p>
+                <p class="price">Ціна: 4999 грн/місяць</p>
+                <button>Замовити</button>
+            </article>
+            <article class="product-card">
+                <img src="https://plus.unsplash.com/premium_photo-1682145177356-33efa0ee06f1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNlcnZlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Product Image">
+                <h3>Веб-хостинг</h3>
+                <p>Надійний хостинг для вашого сайту.</p>
+                <p class="price">Ціна: 2999 грн/місяць</p>
+                <button>Замовити</button>
+            </article>
+            <article class="product-card">
+                <img src="https://plus.unsplash.com/premium_photo-1683758342945-e0e47a14a66d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RG9tYWluJTIwTmFtZSUyMFN5c3RlbXxlbnwwfHwwfHx8MA%3D%3D" alt="Product Image">
+                <h3>DNS-сервіси</h3>
+                <p>Швидкий та стабільний доступ до ваших ресурсів.</p>
+                <p class="price">Ціна: 1999 грн/місяць</p>
+                <button>Замовити</button>
+            </article>
+        </div>
+    </div>
+</main>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+</script>
+
+</body>
+</html>
